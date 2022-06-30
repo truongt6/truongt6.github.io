@@ -1,0 +1,193 @@
+<html>
+<head>
+    <title>Overview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="Assignment2.html">
+                <img src="tim-01.png" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="Overview.html">Overview</a></li>
+                <li><a href="Problem.html">Problem</a></li>
+                <li><a href="Solution.html">Solution</a></li>
+                <li><a href="Conclusion.html">Conclusion</a></li>
+            </ul>
+        </nav>
+        <div class="content"
+        <h1>Overview</h1>
+</div>
+<div class="text"
+<p> <center>Many of the discussions of the future at CERN and the LHC era end with the
+    question - Yes, but how will we ever keep track of such a large project?
+    This proposal provides an answer to such questions. Firstly, it discusses the
+    problem of information access at CERN. Then, it introduces the idea of linked
+    information systems, and compares them with less flexible ways of finding
+    information.
+    <br>
+     <br> It then summarises my short experience with non-linear text systems known
+    as hypertext, describes what CERN needs from such a system, and what
+    industry may provide. Finally, it suggests steps we should take to involve
+    ourselves with hypertext now, so that individually and collectively we may
+    understand what we are creating.</p></center>
+    
+    <br><h2><center>Losing Information at CERN</h2></center>
+    
+    <p>CERN is a wonderful organisation. It involves several thousand people, many
+    of them very creative, all working toward common goals. Although they are
+    nominally organised into a hierarchical management structure,this does not
+    constrain the way people will communicate, and share information, equipment
+    and software across groups.</p>
+    
+    <p>The actual observed working structure of the organisation is a multiply
+    connected "web" whose interconnections evolve with time. In this environment,
+    a new person arriving, or someone taking on a new task, is normally given a
+    few hints as to who would be useful people to talk to. Information about what
+    facilities exist and how to find out about them travels in the corridor gossip
+    and occasional newsletters, and the details about what is required to be done
+    spread in a similar way. All things considered, the result is remarkably
+    successful, despite occasional misunderstandings and duplicated effort.</p>
+    
+    <p>A problem, however, is the high turnover of people. When two years is a
+    typical length of stay, information is constantly being lost. The introduction
+    of the new people demands a fair amount of their time and that of others
+    before they have any idea of what goes on. The technical details of past
+    projects are sometimes lost forever, or only recovered after a detective
+    investigation in an emergency. Often, the information has been recorded, it
+    just cannot be found.</p>
+    
+    <p>If a CERN experiment were a static once-only development, all the
+    information could be written in a big book. As it is, CERN is constantly
+    changing as new ideas are produced, as new technology becomes available, and
+    in order to get around unforeseen technical problems. When a change is
+    necessary, it normally affects only a small part of the organisation. A local
+    reason arises for changing a part of the experiment or detector. At this
+    point, one has to dig around to find out what other parts and people will be
+    affected. Keeping a book up to date becomes impractical, and the structure of
+    the book needs to be constantly revised.</p>
+    
+    <br><p>The sort of information we are discussing answers, for example, questions
+    like:</p>
+    <ul>
+      <li>Where is this module used?</li>
+      <li>Who wrote this code? Where does he work?</li>
+      <li>What documents exist about that concept?</li>
+      <li>Which laboratories are included in that project?</li>
+      <li>Which systems depend on this device?</li>
+      <li>What documents refer to this one?</li>
+    </ul>
+    
+    <br><p>The problems of information loss may be particularly acute at CERN, but in
+    this case (as in certain others), CERN is a model in miniature of the rest of
+    world in a few years time. CERN meets now some problems which the rest of the
+    world will have to face soon. In 10 years, there may be many commercial
+    solutions to the problems above, while today we need something to allow us to
+    continue.</p>
+    
+    <br> 
+
+    <h2><center>Linked information systems</h2></center>
+    
+    <p>In providing a system for manipulating this sort of information, the hope
+    would be to allow a pool of information to develop which could grow and evolve
+    with the organisation and the projects it describes. For this to be possible,
+    the method of storage must not place its own restraints on the information.
+    This is why a "web" of notes with links (like references) between them is far
+    more useful than a fixed hierarchical system. When describing a complex
+    system, many people resort to diagrams with circles and arrows. Circles and
+    arrows leave one free to describe the interrelationships between things in a
+    way that tables, for example, do not. The system we need is like a diagram of
+    circles and arrows, where circles and arrows can stand for anything.</p>
+    
+    <p>We can call the circles nodes, and the arrows links. Suppose each node is
+    like a small note, summary article, or comment. I'm not over concerned here
+    with whether it has text or graphics or both. Ideally, it represents or
+    describes one particular person or object. Examples of nodes can be:</p>
+    <ul>
+      <li>People</li>
+      <li>Software modules</li>
+      <li>Groups of people</li>
+      <li>Projects</li>
+      <li>Concepts</li>
+      <li>Documents</li>
+      <li>Types of hardware</li>
+      <li>Specific hardware objects</li>
+    </ul>
+    
+    <p>The arrows which links circle A to circle B can mean, for example, that
+    A...</p>
+    <ul>
+      <li>depends on B</li>
+      <li>is part of B</li>
+      <li>made B</li>
+      <li>refers to B</li>
+      <li>uses B</li>
+      <li>is an example of B</li>
+    </ul>
+
+    <br>
+    
+    <p>These circles and arrows, nodes and links, have different significance in
+    various sorts of conventional diagrams:</p>
+    
+    <br>
+
+    <p></p>
+    
+    <center>
+    
+    <table border="1" cellspacing="0" cellpadding="5" align="center"
+    bgcolor="white">
+      <tbody>
+        <tr>
+          <th>Diagram</th>
+          <th>Nodes are</th>
+          <th>Arrows mean</th>
+        </tr>
+        <tr>
+          <td>Family tree</td>
+          <td>People</td>
+          <td>"Is parent of"</td>
+        </tr>
+        <tr>
+          <td>Dataflow diagram</td>
+          <td>Software modules"</td>
+          <td>Passes data to"</td>
+        </tr>
+        <tr>
+          <td>Dependency</td>
+          <td>Module</td>
+          <td>"Depends on"</td>
+        </tr>
+        <tr>
+          <td>PERT chart</td>
+          <td>Tasks</td>
+          <td>"Must be done before"</td>
+        </tr>
+        <tr>
+          <td>Organisational chart</td>
+          <td>People</td>
+          <td>"Reports to"</td>
+        </tr>
+      </tbody>
+    </table>
+    </center>
+    
+<br>
+
+    <p>The system must allow any sort of information to be entered. Another person
+    must be able to find the information, sometimes without knowing what he is
+    looking for.</p>
+    
+    <p>In practice, it is useful for the system to be aware of the generic types
+    of the links between items (dependences, for example), and the types of nodes
+    (people, things, documents..) without imposing any limitations.</p>
+
+    </div>
+</body>
+<div class="content"
+<h2>Next:<a href="Problem.html">Problem</a></h2>
+<br>
+<br>
+</div>

@@ -1,0 +1,130 @@
+<html>
+<head>
+    <title>Problem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="Assignment2.html">
+                <img src="tim-01.png" class="logo"></a>
+            <ul class="nav-links">
+                <li><a href="Overview.html">Overview</a></li>
+                <li><a href="Problem.html">Problem</a></li>
+                <li><a href="Solution.html">Solution</a></li>
+                <li><a href="Conclusion.html">Conclusion</a></li>
+            </ul>
+        </nav>
+        <div class="content"
+        <h1>Problem</h1>
+</div>
+<h2><center>The problem with trees</h2></center>
+<div class="text"
+
+<p><center>Many systems are organised hierarchically. The CERNDOC documentation system
+is an example, as is the Unix file system, and the VMS/HELP system. A tree has
+the practical advantage of giving every node a unique name. However, it does
+not allow the system to model the real world. For example, in a hierarchical
+HELP system such as VMS/HELP, one often gets to a leaf on a tree such as:</p></center>
+<pre>        HELP COMPILER SOURCE_FORMAT PRAGMAS DEFAULTS</pre>
+
+<p>only to find a reference to another leaf: "Please see</p>
+<pre>        HELP COMPILER COMMAND OPTIONS DEFAULTS PRAGMAS"</pre>
+
+<p>and it is necessary to leave the system and re-enter it. What was needed
+was a link from one node to another, because in this case the information was
+not naturally organised into a tree.</p>
+<br>
+<p><center>Another example of a tree-structured system is the uucp News system (try
+'rn' under Unix). This is a hierarchical system of discussions ("newsgroups")
+each containing articles contributed by many people. It is a very useful
+method of pooling expertise, but suffers from the inflexibility of a tree.
+Typically, a discussion under one newsgroup will develop into a different
+topic, at which point it ought to be in a different part of the tree. (See Fig
+1).</p></center>
+
+<p></p>
+
+<center>
+
+<table border="1" cellspacing="0" cellpadding="5" bgcolor="EEFFEE"
+align="center">
+  <tbody>
+    <tr>
+      <td><pre>From mcvax!uunet!pyrdc!pyrnj!rutgers!bellcore!geppetto!duncan Thu Mar...
+Article 93 of alt.hypertext:
+Path: cernvax!mcvax!uunet!pyrdc!pyrnj!rutgers!bellcore!geppetto!duncan
+&gt;From: duncan@geppetto.ctt.bellcore.com (Scott Duncan)
+Newsgroups: alt.hypertext
+Subject: Re: Threat to free information networks
+Message-ID: &lt;14646@bellcore.bellcore.com&gt;
+Date: 10 Mar 89 21:00:44 GMT
+References: &lt;1784.2416BB47@isishq.FIDONET.ORG&gt; &lt;3437@uhccux.uhcc...
+Sender: news@bellcore.bellcore.com
+Reply-To: duncan@ctt.bellcore.com (Scott Duncan)
+Organization: Computer Technology Transfer, Bellcore
+Lines: 18
+
+Doug Thompson has written what I felt was a thoughtful article on
+censorship -- my acceptance or rejection of its points is not
+particularly germane to this posting, however.
+
+In reply Greg Lee has somewhat tersely objected.
+
+My question (and reason for this posting) is to ask where we might
+logically take this subject for more discussion.  Somehow alt.hypertext
+does not seem to be the proper place.
+
+Would people feel it appropriate to move to alt.individualism or even
+one of the soc groups.  I am not so much concerned with the specific
+issue of censorship of rec.humor.funny, but the views presented in
+Greg's article.
+
+Speaking only for myself, of course, I am...
+Scott P. Duncan (duncan@ctt.bellcore.com OR ...!bellcore!ctt!duncan)
+                (Bellcore, 444 Hoes Lane  RRC 1H-210, Piscataway, NJ...)
+                (201-699-3910 (w)   201-463-3683 (h))</pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+
+<center>
+<i>Fig 1. An article in the UUCP News scheme.</i></center>
+
+<p><i>The Subject field allows notes on the same topic to be linked together
+within a "newsgroup". The name of the newsgroup (alt.hypertext) is a
+hierarchical name. This particular note is expresses a problem with the strict
+tree structure of the scheme: this discussion is related to several areas.
+Note that the "References", "From" and "Subject" fields can all be used to
+generate links.</i></p>
+
+<br>
+<h2><center>The problem with keywords</h2></center>
+
+<p>Keywords are a common method of accessing data for which one does not have
+the exact coordinates. The usual problem with keywords, however, is that two
+people never chose the same keywords. The keywords then become useful only to
+people who already know the application well.</p>
+
+<p>Practical keyword systems (such as that of VAX/NOTES for example) require
+keywords to be registered. This is already a step in the right direction. A
+linked system takes this to the next logical step. Keywords can be nodes which
+stand for a concept. A keyword node is then no different from any other node.
+One can link documents, etc., to keywords. One can then find keywords by
+finding any node to which they are related. In this way, documents on similar
+topics are indirectly linked, through their key concepts. A keyword search
+then becomes a search starting from a small number of named nodes, and finding
+nodes which are close to all of them.</p>
+
+<p>It was for these reasons that I first made a small linked information
+system, not realising that a term had already been coined for the idea:
+"hypertext".</p>
+</div>
+<div class="content"
+<h2>Next:<a href="Solution.html">Solution</a></h2>
+<br>
+<br>
+</div>
+</body>
